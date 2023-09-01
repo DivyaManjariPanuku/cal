@@ -1,0 +1,47 @@
+<html>
+    <body>  
+        <h2><center>CALCULATOR APPLICATION</center></h2>
+        <font size="5">
+            <p id="calci"></p>
+        <script>
+            function add(a,b)
+            {
+                let c=a+b
+                alert(c);
+            }
+            function sub(a,b)
+            {
+                let d=a-b
+                alert(d);
+            }
+            function mul(a,b)
+            {
+                let e=a*b
+                alert(e);
+            }
+            function div(a,b)
+            {
+                let f=a/b
+                alert(f);
+            }
+            function mod(a,b)
+            {
+                let g=a%b
+                alert(g);
+            }
+        </script>
+        <form name="formss">
+            <label for="value1">Enter value1:</label>
+            <input type="text" id="value1"><br>
+            <label for="value2">Enter value2:</label>
+            <input type="text" id="value2"><br>
+           <button onclick="add(document.getElementById('value1').value,document.getElementById('value2').value)">add</button>
+           <button onclick="sub(document.getElementById('value1').value,document.getElementById('value2').value)">subtract</button>
+           <button onclick="mul(document.getElementById('value1').value,document.getElementById('value2').value)">multiply</button>
+           <button onclick="div(document.getElementById('value1').value,document.getElementById('value2').value)">divide</button>
+           <button onclick="mod(document.getElementById('value1').value,document.getElementById('value2').value)">modulus</button>
+        </form>
+           
+
+    </body>
+</html>
